@@ -7,6 +7,10 @@ export interface IPostFields {
   title: string;
   slug: string;
   content: Document;
+  fields: {
+    [key: string]: any;
+  };
+  contentTypeId: 'post';
 }
 
 export interface IPost extends Entry<IPostFields> {

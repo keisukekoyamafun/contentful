@@ -10,7 +10,7 @@ export interface IPostFields {
 }
 
 export interface IPost extends Entry<IPostFields> {
-  sys: {
+  sys: EntrySys & {
     id: string;
     type: string;
     createdAt: string;

@@ -2,7 +2,7 @@ import { createClient } from "contentful";
 
 import { Entry } from "contentful";
 import { Document } from "@contentful/rich-text-types";
-import { EntrySys } from 'contentful-management';
+import { ContentfulCollection } from 'contentful-management';
 
 export interface IPostFields {
   title: string;
@@ -15,7 +15,7 @@ export interface IPostFields {
 }
 
 export interface IPost extends Entry<IPostFields> {
-  sys: EntrySys & {
+  sys: ContentfulCollection & {
     id: string;
     type: string;
     createdAt: string;

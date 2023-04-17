@@ -2,6 +2,7 @@ import { createClient } from "contentful";
 
 import { Entry } from "contentful";
 import { Document } from "@contentful/rich-text-types";
+import { EntrySys } from 'contentful-management';
 
 export interface IPostFields {
   title: string;
